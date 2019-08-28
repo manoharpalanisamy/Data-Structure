@@ -1,4 +1,4 @@
-# Data Structure C
+# Data Structure C/C++
 
 I want to get dirt on my hands with Data structure in c
 
