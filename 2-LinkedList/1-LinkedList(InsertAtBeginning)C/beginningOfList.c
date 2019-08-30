@@ -42,11 +42,15 @@ void Insert(int x)
 void Print()
 {
     struct Node * temp;
-    temp = head; // we do nor lose head info so we create temp
+    temp = head; // we do not lose head info so we create temp
     printf("List is: ");
     while (temp != NULL)  // Traversal  temp = 200
     {
-        printf(" %d|%d --->", temp->data, temp->next); // 1 | 300
+        if(temp->next != NULL)
+            printf(" %d|%d --->", temp->data, temp->next); // 1 | 300
+        else
+            printf(" %d|%d", temp->data, temp->next); // 1 | 300
+
         temp = temp->next; // 300
     }
     printf("\n");
@@ -67,6 +71,10 @@ void Print();
 int main() {
     struct Node* head;  // Local Variable
     head = NULL;
+
+
+
+
     printf("Linked List (Insert element at beginning of the word)!\n");
     printf("struct size=%d\n", sizeof(head));
     printf("How many Numbers? \n");
