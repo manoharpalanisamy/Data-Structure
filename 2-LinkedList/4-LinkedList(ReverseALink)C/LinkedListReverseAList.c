@@ -29,7 +29,8 @@ void main()
     Print(head);
 }
 
-// Insert a Node a End of the list
+// Insert a Node a End of the list  <-------------------------------------------------------------------|
+// To illustrate everything by draw a figure which consists of 4 node from head 100 , 150, 200, 250 ----|
 struct Node *Insert(struct Node* head, int data)
 {
     struct Node *temp1 = (struct Node*)malloc(sizeof(struct Node));
