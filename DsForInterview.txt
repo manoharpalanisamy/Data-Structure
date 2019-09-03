@@ -1,0 +1,12 @@
+
+Important  - leave Home
+
+1) Linked list
+	i) Linked list - Insert a node at beginning of the list
+	ii) Linked list - Delete a node at N position of the list
+	iii) Linked list - Recursion  LinkedList(Recursion).c
+	iv) Doubly Linkedlist (Easy) but constrate only i) iii) 
+
+2) Stack
+   
+   i) Array Implementation (c & c++)
