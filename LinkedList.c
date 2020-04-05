@@ -21,6 +21,7 @@ void Insert(int data);
 void Print();
 void Delete(int pos);
 void ReversePrint();
+void ReversePrintUsingRecursion(struct Node* head);
 
 int main()
 {
@@ -44,14 +45,55 @@ int main()
     // Print();
     // Delete(1);
     // Print();
+  
+    // ReversePrint();
+    // Print();
     
+    ReversePrintUsingRecursion(head); // LIFO (STACK)
+
     return 0;
 }
 
-
-void ReversePrint()
+/** Recursive Method to Print an elements
+ * 
+    ReversePrintUsingRecursion(100 -> next)
+                    |    
+    ReversePrintUsingRecursion(150 -> next)
+                    |
+    ReversePrintUsingRecursion(200 -> next)
+                    |
+    ReversePrintUsingRecursion(250 -> next)
+                    |
+    ReversePrintUsingRecursion(0) // terminates the Recursion
+                    |
+    printf()
+*/
+void ReversePrintUsingRecursion(struct Node* p)
 {
     
+    if(p == NULL)
+    {
+        return;
+    }
+    ReversePrintUsingRecursion(p->next);
+    printf("|%d|%d| -> ", p->data, p->next);
+}
+
+
+// Iterative Method
+void ReversePrint()
+{
+    struct Node *current, *prev, *next;
+    prev = NULL;
+    current = head; // initially head value 100
+    while(current != NULL)  
+    {
+        next = current -> next; // current->next = 150
+        current -> next = prev; // set current->next = NULL
+        prev = current; // move prev points to current Node 
+        current = next; // move current to next Node
+    }
+    head = prev; // finally current points to NULL so,we have to set head to prev;
 }
 
 // Delete at particular position
