@@ -1,3 +1,6 @@
+Important
+----------
+
 https://github.com/aryansingh12
 
 		(or)
@@ -5,6 +8,16 @@ https://github.com/aryansingh12
 http://30dayscoding.com/
 
 
+
+
+
+
+
+
+Time Complexity
+---------------
+
+https://hackernoon.com/what-does-the-time-complexity-o-log-n-actually-mean-45f94bb5bfbf
 
 Important  - leave Home
 
