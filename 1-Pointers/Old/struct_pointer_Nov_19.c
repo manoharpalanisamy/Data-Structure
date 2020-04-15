@@ -10,7 +10,7 @@ struct Employee
 int main(int argc, char const *argv[])
 {
 	struct Employee *empptr;
-	printf("test=%d\n",sizeof(empptr));
+	printf("test=%lu\n",sizeof(empptr));
 	printf("%s\n","struct_pointer_Nov_19" );
 	printf("%s\n",emp.name);
 	printf("%d\n",emp.age);
@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 	printf("%d\n",empptr->age);
 	printf("%s\n",empptr->sub);
 	
-	printf("%d\n", sizeof(empptr));
+	printf("%lu\n", sizeof(empptr));
 
 	return 0;
 }

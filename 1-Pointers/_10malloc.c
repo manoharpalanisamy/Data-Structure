@@ -3,6 +3,7 @@
 //
 
 #include "stdio.h"
+#include <stdlib.h>
 void main()
 {
     int n=0;
@@ -30,7 +31,7 @@ void main()
 //    }
     printf("-----------------realloc----------------------\n");
      int *B = (int*)realloc(A, 2*n* sizeof(int));
-    printf("Previous Block address = %d, New Block address = %d\n", A, B);
+    printf("Previous Block address = %d, New Block address = %d\n", *A, *B);
     for (int j = 0; j < 2*n; ++j) {
         printf("B[%d]=%d\n", j, *(B+j));
     }
