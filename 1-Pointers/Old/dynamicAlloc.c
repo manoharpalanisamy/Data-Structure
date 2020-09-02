@@ -10,7 +10,7 @@ void main()
 	 nptr=(int*)malloc(n*sizeof(int));
 
 	 printf("%d\n",nptr);
-
+	 printf("sizeof nptr = %d\n", sizeof(nptr));
 	 printf("%s\n","Enter the Array:" );
 	 // scanf("%d",nptr);
 
